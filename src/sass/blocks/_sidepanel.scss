@@ -1,0 +1,33 @@
+.sidepanel {
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    &__link {
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
+    }
+
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+    &__text {
+        height: 150px;
+        width: 24px;
+        span {
+            display: block;
+            width: 150px;
+            transform: rotate(-90deg) translate(-28%, -268%);
+        }
+    }
+}

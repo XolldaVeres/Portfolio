@@ -1,0 +1,101 @@
+.resume {
+    padding-top: 120px;
+    
+    &__wrapper {
+        display: grid;
+        padding: 60px 65px 0 65px;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -7px;
+                background: $main-color;
+                border-radius: 100%;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                position: relative;
+
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: 0px;
+                    background-color: black;
+                }
+            }
+        }
+
+    }
+
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 47px;
+            top: 68px;
+            left: 0;
+            position: absolute;
+            background-color: black;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            color: #000;
+            font-size: 12px;
+            line-height: normal;
+        }
+
+        &-icon {
+            position: absolute;
+            top: 61px;
+            left: 64px;
+            @include before_circle;
+
+            &:before {
+                top: -12px;
+                left: -18px;
+            }
+        }
+
+        &-location {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+    }
+}

@@ -1,0 +1,12 @@
+.btn {
+    height: 45px;
+    padding: 12px 25px;
+    font-size: 14px;
+    border: none;
+    background-color: $main-color;
+    &:hover {
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+        transform: scale(1.01);
+        transition: 0.6s all;
+    }
+}
