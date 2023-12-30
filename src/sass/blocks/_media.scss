@@ -108,7 +108,6 @@
 
     .about {
         &__photo {
-            // background: url(../img/myPhoto/myPhoto.jpeg) no-repeat 50%/cover;
             background: url('../img/myPhoto/body.jpeg') no-repeat 61%/cover;
         }
 
@@ -511,8 +510,6 @@
         }
 
         &__form {
-            // 400h
-            // grid-template: 45px 45px 143px 51px 65px/ 300px ;
             grid-template-columns: 300px;
             grid-template-rows: 45px 45px 143px;
             justify-content: flex-start;
